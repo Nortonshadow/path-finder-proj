@@ -1,8 +1,8 @@
-# path-finder-proj
+# path-finder-project
 Dijkstra’s algorithm
 
 
-Dijkstra’s algorithm
+#Dijkstra’s algorithm
 
 Dijkstra’s algorithm is used to find the shortest path between two points in a graph by evaluating each node in the graph and calculating the distance from the starting node to each node in the graph.
 
@@ -17,7 +17,7 @@ The algorithm starts by evaluating the starting node and assigning it a distance
 It adds the node with the smallest distance to the list of visited nodes and continues this process until it reaches the destination node. As the algorithm evaluates each node, it keeps track of the distances and the path taken to reach each node. If a node is revisited with a shorter distance, the algorithm updates the distance and path to reflect the better route. 
 Key Changes for D* Lite:
 
-Dynamic A*
+#Dynamic A*
 
 Dynamic Updates: D* Lite involves dynamic updates to the graph, which requires additional logic to handle changes in the environment. This code provides a basic framework but does not include those dynamic updates.
 Heuristic and Cost Adjustments: The heuristic function and cost calculations may need to be adjusted if the environment changes during execution.
