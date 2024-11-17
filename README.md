@@ -17,6 +17,31 @@ The algorithm starts by evaluating the starting node and assigning it a distance
 It adds the node with the smallest distance to the list of visited nodes and continues this process until it reaches the destination node. As the algorithm evaluates each node, it keeps track of the distances and the path taken to reach each node. If a node is revisited with a shorter distance, the algorithm updates the distance and path to reflect the better route. 
 Key Changes for D* Lite:
 
+Dijkstra’s Algorithm - Complexity
+▶ Claim: The worst case runtime of the algorithm is O(n2)
+(addition & comparisons), where n is the number of vertices.
+1. The algorithm terminates in no more than n iterations.
+2. At each iteration,
+▶ We can determine v k with no more than n − 1 comparison.
+▶ We can update c(·) by doing no more than 2(n − 1) additions
+and comparisons.
+▶ In the worst case, the algorithm completes in
+n × 3(n − 1) = 3n2 − 3n additions & comparisons.
+▶ It may take much more steps if we don’t use the Dijkstra’s
+algorithm.
+
+Summary
+▶ A typical flow for problem solving:
+modelling −→ design & apply algorithm −→ analyze output
+▶ These steps are inter-connected but requires good
+understanding of the problem and good modelling.
+▶ Back to the Dijkstra’s algorithm, note that it is one of the
+most popular algorithms for graph with applications to:
+▶ Google Maps, Rubik’s cube, etc.
+▶ Extensions: graph with cycles, random shortest path (to
+model congestion)
+
+
 #Dynamic A*
 
 Dynamic Updates: D* Lite involves dynamic updates to the graph, which requires additional logic to handle changes in the environment. This code provides a basic framework but does not include those dynamic updates.
